@@ -1,5 +1,9 @@
 import css from './Notification.module.css';
-const Notification = ({ message }) => {
+
+type NotificationProps = {
+    message: string;
+};
+const Notification = ({ message }: NotificationProps) => {
     return (
         <div className={css.notification}>
             <p>{message}</p>
