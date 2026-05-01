@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import './App.css'
 import css from './App.module.css'
-import CafeInfo from "./components/CafeInfo"
-import  VoteOptions  from "./components/VoteOptions"
-import  VoteStats  from "./components/VoteStats"
-import  Notification  from "./components/Notification"
+import CafeInfo from "./CafeInfo"
+import  VoteOptions  from "./VoteOptions"
+import  VoteStats  from "./VoteStats"
+import  Notification  from "./Notification"
 
 interface Votes {
   good: number;
