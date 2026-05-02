@@ -28,7 +28,7 @@ export default function App() {
     });
   };
   const totalVotes = votes.good + votes.neutral + votes.bad;
-  const positivePercentage = totalVotes > 0 ? Math.round((votes.good / totalVotes) * 100) : 0;
+  const positiveRate = totalVotes > 0 ? Math.round((votes.good / totalVotes) * 100) : 0;
   return (
     <div className={css.app}>
       <CafeInfo />
@@ -38,7 +38,7 @@ export default function App() {
         canReset={totalVotes > 0}
       />
       {totalVotes > 0 ? (
-        <VoteStats  votes={votes} totalVotes={totalVotes}  positivePercentage={positivePercentage} />
+        <VoteStats  votes={votes} totalVotes={totalVotes}  positiveRate={positiveRate} />
       ) : (
         <Notification   message="No votes yet. Be the first to vote!" />
       )}

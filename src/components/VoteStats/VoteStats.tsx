@@ -7,11 +7,11 @@ interface VoteStatsProps {
 
   totalVotes: number;
 
-  positivePercentage: number;
+positiveRate: number;
 
 }
 
-const VoteStats = ({ votes, totalVotes, positivePercentage }: VoteStatsProps) => {
+const VoteStats = ({ votes, totalVotes, positiveRate }: VoteStatsProps) => {
 
   return (
 
@@ -25,7 +25,7 @@ const VoteStats = ({ votes, totalVotes, positivePercentage }: VoteStatsProps) =>
 
       <p className={css.stat}>Total: <strong>{totalVotes}</strong></p>
 
-      <p className={css.stat}>Positive: <strong>{positivePercentage}%</strong></p>
+      <p className={css.stat}>Positive: <strong>{positiveRate}%</strong></p>
 
     </div>
 
