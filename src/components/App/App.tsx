@@ -1,17 +1,13 @@
 import { useState } from 'react'
+import  type { Votes, VoteType } from '../../types/votes.ts'
 import css from './App.module.css'
 import CafeInfo from "../CafeInfo/CafeInfo"
 import  VoteOptions  from "../VoteOptions/VoteOptions"
 import  VoteStats  from "../VoteStats/VoteStats"
 import  Notification  from "../Notification/Notification"
 
-interface Votes {
-  good: number;
-  neutral: number;
-  bad: number;
-}
-type VoteType = "good" | "neutral" | "bad";
 export default function App() {
+
   
   const [votes, setVotes] = useState<Votes>({
     good: 0,
